@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doe Roupas - Ajude Quem Precisa</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header class="fade-in">
+        <h1>Doe Roupas ❤️</h1>
+        <p>Transforme solidariedade em ação! Preencha o formulário e faça sua doação.</p>
+    </header>
+
+    <main>
+        <section class="form-section fade-in">
+            <h2>Formulário de Doação</h2>
+            <form id="form-doacao" onsubmit="enviarDoacao(event)">
+                <div class="form-group">
+                    <label for="nome">Seu Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantidade">Quantidade de Roupas:</label>
+                    <input type="number" id="quantidade" name="quantidade" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo">Tipo de Roupa:</label>
+                    <select id="tipo" name="tipo" required>
+            <option value="camisetas">Camisetas</option>
+            <option value="calcas">Calças</option>
+            <option value="agasalhos">Agasalhos</option>
+            <option value="outros">Outros</option>
+          </select>
+                </div>
+
+                <button type="submit" class="botao">Fazer Doação</button>
+            </form>
+
+            <div id="mensagem" class="mensagem hidden">
+                <h3>🎉 Obrigado pela sua doação!</h3>
+                <p>Entraremos em contato em breve para combinar a entrega.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Doe Roupas | Feito com ❤️ para um mundo melhor</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
